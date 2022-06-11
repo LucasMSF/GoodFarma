@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Aluno\\Desktop\\GoodFarma-main\\GoodFarma.vbproj": {}
+    "C:\\Users\\lucas\\Desktop\\gf\\GoodFarma.vbproj": {}
   },
   "projects": {
-    "C:\\Users\\Aluno\\Desktop\\GoodFarma-main\\GoodFarma.vbproj": {
+    "C:\\Users\\lucas\\Desktop\\gf\\GoodFarma.vbproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Aluno\\Desktop\\GoodFarma-main\\GoodFarma.vbproj",
+        "projectUniqueName": "C:\\Users\\lucas\\Desktop\\gf\\GoodFarma.vbproj",
         "projectName": "GoodFarma",
-        "projectPath": "C:\\Users\\Aluno\\Desktop\\GoodFarma-main\\GoodFarma.vbproj",
-        "packagesPath": "C:\\Users\\Aluno\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Aluno\\Desktop\\GoodFarma-main\\obj\\",
+        "projectPath": "C:\\Users\\lucas\\Desktop\\gf\\GoodFarma.vbproj",
+        "packagesPath": "C:\\Users\\lucas\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\lucas\\Desktop\\gf\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Aluno\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\lucas\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -67,7 +71,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.200\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
         }
       }
     }
