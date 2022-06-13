@@ -29,4 +29,9 @@
             Exit Sub
         End If
     End Sub
+
+    Private Sub btn_func_Click(sender As Object, e As EventArgs) Handles btn_func.Click
+        FuncForm.Show()
+        Close()
+    End Sub
 End Class

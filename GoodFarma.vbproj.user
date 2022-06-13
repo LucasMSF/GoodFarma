@@ -10,6 +10,9 @@
     <Compile Update="Funcionario\FormDashboardFunc.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="Gerencial\FormCadFunc.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="Gerencial\FormDashboardGerencial.vb">
       <SubType>Form</SubType>
     </Compile>
@@ -17,6 +20,9 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="Gerencial\FormRelatorios.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Gerencial\FuncForm.vb">
       <SubType>Form</SubType>
     </Compile>
   </ItemGroup>

@@ -37,6 +37,7 @@ Partial Class FormDashboardGerencial
         Me.btn_estoque = New System.Windows.Forms.Button()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.btn_sair = New System.Windows.Forms.Button()
+        Me.btn_func = New System.Windows.Forms.Button()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel1.SuspendLayout()
         Me.Panel2.SuspendLayout()
@@ -196,11 +197,24 @@ Partial Class FormDashboardGerencial
         Me.btn_sair.Text = "Sair "
         Me.btn_sair.UseVisualStyleBackColor = False
         '
+        'btn_func
+        '
+        Me.btn_func.BackColor = System.Drawing.SystemColors.MenuHighlight
+        Me.btn_func.Font = New System.Drawing.Font("Segoe UI", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.btn_func.ForeColor = System.Drawing.Color.White
+        Me.btn_func.Location = New System.Drawing.Point(230, 283)
+        Me.btn_func.Name = "btn_func"
+        Me.btn_func.Size = New System.Drawing.Size(191, 54)
+        Me.btn_func.TabIndex = 10
+        Me.btn_func.Text = "Funcionários"
+        Me.btn_func.UseVisualStyleBackColor = False
+        '
         'FormDashboardGerencial
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.btn_func)
         Me.Controls.Add(Me.btn_sair)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.btn_estoque)
@@ -237,4 +251,5 @@ Partial Class FormDashboardGerencial
     Friend WithEvents btn_estoque As Button
     Friend WithEvents Button1 As Button
     Friend WithEvents btn_sair As Button
+    Friend WithEvents btn_func As Button
 End Class

@@ -174,3 +174,5 @@ C:\Users\lucas\Desktop\gf\obj\Debug\net6.0-windows\refint\GoodFarma.dll
 C:\Users\lucas\Desktop\gf\obj\Debug\net6.0-windows\GoodFarma.pdb
 C:\Users\lucas\Desktop\gf\obj\Debug\net6.0-windows\GoodFarma.genruntimeconfig.cache
 C:\Users\lucas\Desktop\gf\obj\Debug\net6.0-windows\ref\GoodFarma.dll
+C:\Users\lucas\Documents\goodfarma\obj\Debug\net6.0-windows\GoodFarma.FuncForm.resources
+C:\Users\lucas\Documents\goodfarma\obj\Debug\net6.0-windows\GoodFarma.FormCadFunc.resources
