@@ -35,6 +35,8 @@ Partial Class FormCadFunc
         Me.txt_usuario = New System.Windows.Forms.TextBox()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.txt_senha = New System.Windows.Forms.TextBox()
+        Me.btn_editar = New System.Windows.Forms.Button()
+        Me.txt_id = New System.Windows.Forms.TextBox()
         Me.SuspendLayout()
         '
         'Label6
@@ -102,10 +104,10 @@ Partial Class FormCadFunc
         Me.btn_cadastrar.BackColor = System.Drawing.SystemColors.MenuHighlight
         Me.btn_cadastrar.Font = New System.Drawing.Font("Segoe UI", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.btn_cadastrar.ForeColor = System.Drawing.Color.White
-        Me.btn_cadastrar.Location = New System.Drawing.Point(12, 388)
+        Me.btn_cadastrar.Location = New System.Drawing.Point(13, 360)
         Me.btn_cadastrar.Name = "btn_cadastrar"
         Me.btn_cadastrar.RightToLeft = System.Windows.Forms.RightToLeft.Yes
-        Me.btn_cadastrar.Size = New System.Drawing.Size(357, 40)
+        Me.btn_cadastrar.Size = New System.Drawing.Size(357, 50)
         Me.btn_cadastrar.TabIndex = 5
         Me.btn_cadastrar.Text = "Cadastrar"
         Me.btn_cadastrar.UseVisualStyleBackColor = False
@@ -115,9 +117,9 @@ Partial Class FormCadFunc
         Me.btn_sair.BackColor = System.Drawing.Color.Crimson
         Me.btn_sair.Font = New System.Drawing.Font("Segoe UI", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.btn_sair.ForeColor = System.Drawing.Color.White
-        Me.btn_sair.Location = New System.Drawing.Point(12, 434)
+        Me.btn_sair.Location = New System.Drawing.Point(13, 416)
         Me.btn_sair.Name = "btn_sair"
-        Me.btn_sair.Size = New System.Drawing.Size(357, 40)
+        Me.btn_sair.Size = New System.Drawing.Size(357, 50)
         Me.btn_sair.TabIndex = 6
         Me.btn_sair.Text = "Voltar"
         Me.btn_sair.UseVisualStyleBackColor = False
@@ -160,11 +162,35 @@ Partial Class FormCadFunc
         Me.txt_senha.Size = New System.Drawing.Size(357, 23)
         Me.txt_senha.TabIndex = 4
         '
+        'btn_editar
+        '
+        Me.btn_editar.BackColor = System.Drawing.Color.Gold
+        Me.btn_editar.Font = New System.Drawing.Font("Segoe UI", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.btn_editar.ForeColor = System.Drawing.Color.White
+        Me.btn_editar.Location = New System.Drawing.Point(13, 360)
+        Me.btn_editar.Name = "btn_editar"
+        Me.btn_editar.RightToLeft = System.Windows.Forms.RightToLeft.Yes
+        Me.btn_editar.Size = New System.Drawing.Size(357, 50)
+        Me.btn_editar.TabIndex = 20
+        Me.btn_editar.Text = "Editar"
+        Me.btn_editar.UseVisualStyleBackColor = False
+        Me.btn_editar.Visible = False
+        '
+        'txt_id
+        '
+        Me.txt_id.Location = New System.Drawing.Point(270, 12)
+        Me.txt_id.Name = "txt_id"
+        Me.txt_id.Size = New System.Drawing.Size(100, 23)
+        Me.txt_id.TabIndex = 21
+        Me.txt_id.Visible = False
+        '
         'FormCadFunc
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(382, 501)
+        Me.Controls.Add(Me.txt_id)
+        Me.Controls.Add(Me.btn_editar)
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.txt_senha)
         Me.Controls.Add(Me.Label3)
@@ -197,4 +223,6 @@ Partial Class FormCadFunc
     Friend WithEvents txt_usuario As TextBox
     Friend WithEvents Label4 As Label
     Friend WithEvents txt_senha As TextBox
+    Friend WithEvents btn_editar As Button
+    Friend WithEvents txt_id As TextBox
 End Class

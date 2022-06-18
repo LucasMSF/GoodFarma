@@ -294,16 +294,11 @@ Partial Class FormCaixa
     Friend WithEvents Panel2 As Panel
     Friend WithEvents lbl_total As Label
     Friend WithEvents Label2 As Label
-    Friend WithEvents Column5 As DataGridViewTextBoxColumn
-    Friend WithEvents Column6 As DataGridViewTextBoxColumn
-    Friend WithEvents Column7 As DataGridViewTextBoxColumn
-    Friend WithEvents Column8 As DataGridViewImageColumn
     Friend WithEvents lbl_itens As Label
     Friend WithEvents Label4 As Label
     Friend WithEvents btn_voltar As Button
     Friend WithEvents btn_finalizar As Button
     Friend WithEvents Label3 As Label
-    Friend WithEvents Column9 As DataGridViewTextBoxColumn
     Friend WithEvents Panel3 As Panel
     Friend WithEvents Label5 As Label
     Friend WithEvents Panel4 As Panel
@@ -314,4 +309,9 @@ Partial Class FormCaixa
     Friend WithEvents valor_unitario As DataGridViewTextBoxColumn
     Friend WithEvents Column10 As DataGridViewTextBoxColumn
     Friend WithEvents Column4 As DataGridViewImageColumn
+    Friend WithEvents Column9 As DataGridViewTextBoxColumn
+    Friend WithEvents Column5 As DataGridViewTextBoxColumn
+    Friend WithEvents Column6 As DataGridViewTextBoxColumn
+    Friend WithEvents Column7 As DataGridViewTextBoxColumn
+    Friend WithEvents Column8 As DataGridViewImageColumn
 End Class

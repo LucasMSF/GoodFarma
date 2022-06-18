@@ -93,14 +93,6 @@
         End With
     End Sub
 
-    Private Sub data_items_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles data_items.CellContentClick
-        With data_items
-            If .CurrentRow.Cells(4).Selected = True Then
-                removeItem(.CurrentRow, True)
-            End If
-        End With
-    End Sub
-
     Private Sub btn_voltar_Click(sender As Object, e As EventArgs) Handles btn_voltar.Click
         Dim resp = MsgBox("Deseja Voltar?" & vbCrLf & "Isso irá cancelar qualquer compra em andamento.", vbQuestion + vbYesNo, "Atenção")
         If (resp = vbYes) Then

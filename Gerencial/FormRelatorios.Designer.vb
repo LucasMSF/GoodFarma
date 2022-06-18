@@ -23,16 +23,19 @@ Partial Class FormRelatorios
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FormRelatorios))
-        Me.PrintDocument1 = New System.Drawing.Printing.PrintDocument()
         Me.cmb_relat = New System.Windows.Forms.ComboBox()
         Me.Panel4 = New System.Windows.Forms.Panel()
         Me.Label13 = New System.Windows.Forms.Label()
         Me.btn_gerar = New System.Windows.Forms.Button()
+        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.Button1 = New System.Windows.Forms.Button()
+        Me.fbd = New System.Windows.Forms.FolderBrowserDialog()
         Me.Panel4.SuspendLayout()
         Me.SuspendLayout()
         '
         'cmb_relat
         '
+        Me.cmb_relat.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.cmb_relat.FormattingEnabled = True
         Me.cmb_relat.Items.AddRange(New Object() {"Relatório anual de vendas", "Relatório de vendas por funcionário", "Relatório de Produtos mais Vendidos"})
         Me.cmb_relat.Location = New System.Drawing.Point(12, 54)
@@ -74,11 +77,30 @@ Partial Class FormRelatorios
         Me.btn_gerar.Text = "Gerar Relatório"
         Me.btn_gerar.UseVisualStyleBackColor = False
         '
+        'TextBox1
+        '
+        Me.TextBox1.Location = New System.Drawing.Point(12, 87)
+        Me.TextBox1.Name = "TextBox1"
+        Me.TextBox1.ReadOnly = True
+        Me.TextBox1.Size = New System.Drawing.Size(326, 23)
+        Me.TextBox1.TabIndex = 21
+        '
+        'Button1
+        '
+        Me.Button1.Image = CType(resources.GetObject("Button1.Image"), System.Drawing.Image)
+        Me.Button1.Location = New System.Drawing.Point(304, 116)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(34, 30)
+        Me.Button1.TabIndex = 22
+        Me.Button1.UseVisualStyleBackColor = True
+        '
         'FormRelatorios
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(345, 301)
+        Me.Controls.Add(Me.Button1)
+        Me.Controls.Add(Me.TextBox1)
         Me.Controls.Add(Me.btn_gerar)
         Me.Controls.Add(Me.Panel4)
         Me.Controls.Add(Me.cmb_relat)
@@ -88,12 +110,14 @@ Partial Class FormRelatorios
         Me.Panel4.ResumeLayout(False)
         Me.Panel4.PerformLayout()
         Me.ResumeLayout(False)
+        Me.PerformLayout()
 
     End Sub
-
-    Friend WithEvents PrintDocument1 As Printing.PrintDocument
     Friend WithEvents cmb_relat As ComboBox
     Friend WithEvents Panel4 As Panel
     Friend WithEvents Label13 As Label
     Friend WithEvents btn_gerar As Button
+    Friend WithEvents TextBox1 As TextBox
+    Friend WithEvents Button1 As Button
+    Friend WithEvents fbd As FolderBrowserDialog
 End Class

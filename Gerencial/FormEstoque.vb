@@ -1,8 +1,6 @@
 ﻿Public Class FormEstoque
     Private Sub FormEstoque_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         carregar_produtos(data_items)
-        lblNome.Text = sessao.Fields(1).Value
-        lbl_cpf.Text = sessao.Fields(3).Value
     End Sub
 
     Private Sub carregar_produtos(grid As DataGridView, Optional sql As String = "SELECT * from tb_produtos ORDER BY nome DESC")

@@ -10,7 +10,7 @@ Public Class FormRelatorios
     Private Sub gerarPdf(titulo As String, colunas() As String, dados As ADODB.Recordset, data As String)
         Try
             Dim doc As New Document(iTextSharp.text.PageSize.A4, 20, 20, 20, 20)
-            Dim arq As FileStream = New FileStream(Application.StartupPath & "\relatorios\" & data & ".pdf", FileMode.Create)
+            Dim arq As FileStream = New FileStream(TextBox1.Text & "\" & data & ".pdf", FileMode.Create)
             Dim writer As PdfWriter = PdfWriter.GetInstance(doc, arq)
             doc.Open()
 
@@ -54,6 +54,10 @@ Public Class FormRelatorios
     End Sub
 
     Private Sub btn_gerar_Click(sender As Object, e As EventArgs) Handles btn_gerar.Click
+        If TextBox1.Text = Nothing Then
+            MsgBox("Selecione o diretório", vbExclamation + vbOKOnly, "Atenção")
+            Exit Sub
+        End If
         Select Case cmb_relat.Text
             Case "Relatório anual de vendas"
                 sql = "SELECT UCase(MONTHNAME(MONTH(data_venda))), COUNT(id), 'R$ ' & SUM(valor_total) FROM tb_vendas WHERE YEAR(data_venda) = YEAR(Date()) GROUP BY MONTH(data_venda) ORDER BY MONTH(data_venda)"
@@ -70,5 +74,11 @@ Public Class FormRelatorios
             Case Else
                 MsgBox("Opção inválida!", vbExclamation + vbOKOnly, "Atenção")
         End Select
+    End Sub
+
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+        If fbd.ShowDialog() = 1 Then
+            TextBox1.Text = fbd.SelectedPath
+        End If
     End Sub
 End Class

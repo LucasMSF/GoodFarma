@@ -62,11 +62,6 @@ Partial Class FormEstoque
         Me.txt_produto = New System.Windows.Forms.TextBox()
         Me.Panel5 = New System.Windows.Forms.Panel()
         Me.Label9 = New System.Windows.Forms.Label()
-        Me.Panel6 = New System.Windows.Forms.Panel()
-        Me.Label7 = New System.Windows.Forms.Label()
-        Me.lbl_cpf = New System.Windows.Forms.Label()
-        Me.Label11 = New System.Windows.Forms.Label()
-        Me.lblNome = New System.Windows.Forms.Label()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Panel2.SuspendLayout()
         Me.Panel1.SuspendLayout()
@@ -77,7 +72,6 @@ Partial Class FormEstoque
         CType(Me.data_items, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.TabPage1.SuspendLayout()
         Me.Panel5.SuspendLayout()
-        Me.Panel6.SuspendLayout()
         Me.SuspendLayout()
         '
         'Panel2
@@ -92,7 +86,7 @@ Partial Class FormEstoque
         Me.Panel2.Controls.Add(Me.btn_voltar)
         Me.Panel2.Controls.Add(Me.btn_criar)
         Me.Panel2.Controls.Add(Me.Label2)
-        Me.Panel2.Location = New System.Drawing.Point(12, 283)
+        Me.Panel2.Location = New System.Drawing.Point(11, 238)
         Me.Panel2.Name = "Panel2"
         Me.Panel2.Size = New System.Drawing.Size(409, 414)
         Me.Panel2.TabIndex = 14
@@ -198,7 +192,7 @@ Partial Class FormEstoque
         Me.Panel1.BackColor = System.Drawing.SystemColors.MenuHighlight
         Me.Panel1.Controls.Add(Me.Label1)
         Me.Panel1.Controls.Add(Me.lbl_nome)
-        Me.Panel1.Location = New System.Drawing.Point(12, 235)
+        Me.Panel1.Location = New System.Drawing.Point(11, 190)
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(409, 42)
         Me.Panel1.TabIndex = 12
@@ -231,7 +225,7 @@ Partial Class FormEstoque
         '
         Me.PictureBox1.Image = Global.GoodFarma.My.Resources.Resources.logo_small
         Me.PictureBox1.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.PictureBox1.Location = New System.Drawing.Point(12, 62)
+        Me.PictureBox1.Location = New System.Drawing.Point(11, 17)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(409, 167)
         Me.PictureBox1.TabIndex = 11
@@ -241,7 +235,7 @@ Partial Class FormEstoque
         '
         Me.TabControl1.Controls.Add(Me.TabPage2)
         Me.TabControl1.Controls.Add(Me.TabPage1)
-        Me.TabControl1.Location = New System.Drawing.Point(6, 57)
+        Me.TabControl1.Location = New System.Drawing.Point(5, 12)
         Me.TabControl1.Name = "TabControl1"
         Me.TabControl1.SelectedIndex = 0
         Me.TabControl1.Size = New System.Drawing.Size(685, 655)
@@ -499,73 +493,13 @@ Partial Class FormEstoque
         Me.Label9.TabIndex = 17
         Me.Label9.Text = "Formulário"
         '
-        'Panel6
-        '
-        Me.Panel6.BackColor = System.Drawing.Color.Crimson
-        Me.Panel6.Controls.Add(Me.Label7)
-        Me.Panel6.Controls.Add(Me.lbl_cpf)
-        Me.Panel6.Controls.Add(Me.Label11)
-        Me.Panel6.Controls.Add(Me.lblNome)
-        Me.Panel6.Location = New System.Drawing.Point(6, 7)
-        Me.Panel6.Name = "Panel6"
-        Me.Panel6.Size = New System.Drawing.Size(681, 35)
-        Me.Panel6.TabIndex = 18
-        '
-        'Label7
-        '
-        Me.Label7.AutoSize = True
-        Me.Label7.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.Label7.ForeColor = System.Drawing.Color.White
-        Me.Label7.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.Label7.Location = New System.Drawing.Point(479, 6)
-        Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(42, 21)
-        Me.Label7.TabIndex = 4
-        Me.Label7.Text = "CPF:"
-        '
-        'lbl_cpf
-        '
-        Me.lbl_cpf.AutoSize = True
-        Me.lbl_cpf.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.lbl_cpf.ForeColor = System.Drawing.Color.White
-        Me.lbl_cpf.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.lbl_cpf.Location = New System.Drawing.Point(518, 5)
-        Me.lbl_cpf.Name = "lbl_cpf"
-        Me.lbl_cpf.Size = New System.Drawing.Size(31, 21)
-        Me.lbl_cpf.TabIndex = 3
-        Me.lbl_cpf.Text = "cpf"
-        '
-        'Label11
-        '
-        Me.Label11.AutoSize = True
-        Me.Label11.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.Label11.ForeColor = System.Drawing.Color.White
-        Me.Label11.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.Label11.Location = New System.Drawing.Point(5, 6)
-        Me.Label11.Name = "Label11"
-        Me.Label11.Size = New System.Drawing.Size(61, 21)
-        Me.Label11.TabIndex = 2
-        Me.Label11.Text = "Nome:"
-        '
-        'lblNome
-        '
-        Me.lblNome.AutoSize = True
-        Me.lblNome.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.lblNome.ForeColor = System.Drawing.Color.White
-        Me.lblNome.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.lblNome.Location = New System.Drawing.Point(63, 6)
-        Me.lblNome.Name = "lblNome"
-        Me.lblNome.Size = New System.Drawing.Size(50, 21)
-        Me.lblNome.TabIndex = 1
-        Me.lblNome.Text = "nome"
-        '
         'Button1
         '
         Me.Button1.BackColor = System.Drawing.Color.Crimson
         Me.Button1.Font = New System.Drawing.Font("Segoe UI", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.Button1.ForeColor = System.Drawing.Color.White
         Me.Button1.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.Button1.Location = New System.Drawing.Point(10, 718)
+        Me.Button1.Location = New System.Drawing.Point(9, 673)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(182, 54)
         Me.Button1.TabIndex = 19
@@ -576,9 +510,8 @@ Partial Class FormEstoque
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(693, 781)
+        Me.ClientSize = New System.Drawing.Size(693, 736)
         Me.Controls.Add(Me.Button1)
-        Me.Controls.Add(Me.Panel6)
         Me.Controls.Add(Me.TabControl1)
         Me.Controls.Add(Me.Panel2)
         Me.Controls.Add(Me.Panel1)
@@ -600,8 +533,6 @@ Partial Class FormEstoque
         Me.TabPage1.PerformLayout()
         Me.Panel5.ResumeLayout(False)
         Me.Panel5.PerformLayout()
-        Me.Panel6.ResumeLayout(False)
-        Me.Panel6.PerformLayout()
         Me.ResumeLayout(False)
 
     End Sub
@@ -633,11 +564,6 @@ Partial Class FormEstoque
     Friend WithEvents Column1 As DataGridViewImageColumn
     Friend WithEvents Panel5 As Panel
     Friend WithEvents Label9 As Label
-    Friend WithEvents Panel6 As Panel
-    Friend WithEvents Label7 As Label
-    Friend WithEvents lbl_cpf As Label
-    Friend WithEvents Label11 As Label
-    Friend WithEvents lblNome As Label
     Friend WithEvents Button1 As Button
     Friend WithEvents Label10 As Label
     Friend WithEvents Label8 As Label

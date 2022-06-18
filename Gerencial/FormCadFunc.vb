@@ -33,9 +33,31 @@
             db.Execute(sql)
 
             MsgBox("Funcionário cadastrado com sucesso!", vbInformation + vbOKOnly, "Cadastro")
+            FuncForm.carregar_dados()
             limpar()
         Catch ex As Exception
-            MsgBox("Erro ao cadastrar usuário!" & vbCrLf & ex.Message & ex.Message, vbCritical + vbOKOnly, "Erro")
+            MsgBox("Erro ao cadastrar usuário!" & vbCrLf & ex.Message, vbCritical + vbOKOnly, "Erro")
+        End Try
+
+    End Sub
+
+    Sub editFunc(nome As String, cargo As String, cpf As String, usuario As String, senha As String, id As Integer)
+        Try
+            sql = "UPDATE tb_usuarios SET login = '" & usuario & "', senha = '" & senha & "' WHERE func_id = " & id
+            db.Execute(sql)
+
+            sql = "SELECT id FROM tb_cargos WHERE nome = '" & cargo & "'"
+            rs = db.Execute(sql)
+
+            sql = "UPDATE tb_funcionarios SET nome = '" & nome & "', cpf = '" & cpf & "', cargo = '" & rs.Fields(0).Value & "' WHERE id = " & id
+            db.Execute(sql)
+
+            MsgBox("Funcionário atualizado com sucesso!", vbInformation + vbOKOnly, "Cadastro")
+            FuncForm.carregar_dados()
+            limpar()
+            trocar_botoes()
+        Catch ex As Exception
+            MsgBox("Erro ao cadastrar usuário!" & vbCrLf & ex.Message, vbCritical + vbOKOnly, "Erro")
         End Try
 
     End Sub
@@ -74,6 +96,34 @@
     End Sub
 
     Private Sub btn_sair_Click(sender As Object, e As EventArgs) Handles btn_sair.Click
+        FuncForm.Show()
         Close()
+    End Sub
+
+    Sub popular_edicao(nome As String, cpf As String, usuario As String, senha As String, id As Integer)
+        txt_nome.Text = nome
+        txt_cpf.Text = cpf
+        txt_usuario.Text = usuario
+        txt_senha.Text = senha
+        txt_id.Text = id
+        trocar_botoes()
+    End Sub
+
+    Private Sub btn_editar_Click(sender As Object, e As EventArgs) Handles btn_editar.Click
+        If verificar_campos() = True Then
+            editFunc(txt_nome.Text, cmb_cargos.Text, txt_cpf.Text, txt_usuario.Text, txt_senha.Text, txt_id.Text)
+        Else
+            MsgBox("Dados inválidos!" & vbCrLf & "Revise os campos", vbCritical + vbOKOnly, "Erro")
+        End If
+    End Sub
+
+    Private Sub trocar_botoes()
+        If btn_editar.Visible = False Then
+            btn_cadastrar.Visible = False
+            btn_editar.Visible = True
+        Else
+            btn_cadastrar.Visible = True
+            btn_editar.Visible = False
+        End If
     End Sub
 End Class

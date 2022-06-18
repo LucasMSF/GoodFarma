@@ -233,7 +233,7 @@
     <value>21</value>
   </data>
   <data name="data_produtos.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1012, 73</value>
+    <value>1004, 73</value>
   </data>
   <data name="data_produtos.Size" type="System.Drawing.Size, System.Drawing">
     <value>411, 574</value>
@@ -281,7 +281,7 @@
     <value>True</value>
   </metadata>
   <data name="Column8.HeaderText" xml:space="preserve">
-    <value>Remover</value>
+    <value>Remover </value>
   </data>
   <data name="Column8.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -312,7 +312,7 @@
     <value>438, 73</value>
   </data>
   <data name="data_items.Size" type="System.Drawing.Size, System.Drawing">
-    <value>545, 574</value>
+    <value>551, 574</value>
   </data>
   <data name="data_items.TabIndex" type="System.Int32, mscorlib">
     <value>10</value>
@@ -583,7 +583,7 @@
     <value>NoControl</value>
   </data>
   <data name="Label5.Location" type="System.Drawing.Point, System.Drawing">
-    <value>210, 2</value>
+    <value>215, 1</value>
   </data>
   <data name="Label5.Size" type="System.Drawing.Size, System.Drawing">
     <value>128, 37</value>
@@ -610,7 +610,7 @@
     <value>438, 25</value>
   </data>
   <data name="Panel3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>545, 42</value>
+    <value>551, 42</value>
   </data>
   <data name="Panel3.TabIndex" type="System.Int32, mscorlib">
     <value>8</value>
@@ -661,7 +661,7 @@
     <value>0</value>
   </data>
   <data name="Panel4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1012, 25</value>
+    <value>1004, 25</value>
   </data>
   <data name="Panel4.Size" type="System.Drawing.Size, System.Drawing">
     <value>411, 42</value>
@@ -688,7 +688,7 @@
     <value>7, 15</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>1435, 659</value>
+    <value>1425, 659</value>
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>

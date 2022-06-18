@@ -28,13 +28,14 @@ Partial Class FuncForm
         Me.txt_pesquisa = New System.Windows.Forms.ToolStripTextBox()
         Me.ToolStripButton1 = New System.Windows.Forms.ToolStripButton()
         Me.data_func = New System.Windows.Forms.DataGridView()
+        Me.btn_sair = New System.Windows.Forms.Button()
+        Me.btn_add = New System.Windows.Forms.Button()
         Me.Column1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Column2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Column4 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Column3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column6 = New System.Windows.Forms.DataGridViewImageColumn()
         Me.Column5 = New System.Windows.Forms.DataGridViewImageColumn()
-        Me.btn_sair = New System.Windows.Forms.Button()
-        Me.btn_add = New System.Windows.Forms.Button()
         Me.ToolStrip1.SuspendLayout()
         CType(Me.data_func, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -44,7 +45,7 @@ Partial Class FuncForm
         Me.ToolStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripLabel1, Me.txt_pesquisa, Me.ToolStripButton1})
         Me.ToolStrip1.Location = New System.Drawing.Point(0, 0)
         Me.ToolStrip1.Name = "ToolStrip1"
-        Me.ToolStrip1.Size = New System.Drawing.Size(800, 25)
+        Me.ToolStrip1.Size = New System.Drawing.Size(535, 25)
         Me.ToolStrip1.TabIndex = 0
         Me.ToolStrip1.Text = "ToolStrip1"
         '
@@ -72,54 +73,23 @@ Partial Class FuncForm
         '
         Me.data_func.AllowUserToAddRows = False
         Me.data_func.AllowUserToDeleteRows = False
+        Me.data_func.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells
+        Me.data_func.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells
         Me.data_func.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.data_func.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Column1, Me.Column2, Me.Column4, Me.Column3, Me.Column5})
+        Me.data_func.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Column1, Me.Column2, Me.Column4, Me.Column3, Me.Column6, Me.Column5})
         Me.data_func.Location = New System.Drawing.Point(12, 43)
         Me.data_func.Name = "data_func"
         Me.data_func.ReadOnly = True
         Me.data_func.RowTemplate.Height = 25
-        Me.data_func.Size = New System.Drawing.Size(776, 454)
+        Me.data_func.Size = New System.Drawing.Size(511, 454)
         Me.data_func.TabIndex = 1
-        '
-        'Column1
-        '
-        Me.Column1.HeaderText = "ID"
-        Me.Column1.Name = "Column1"
-        Me.Column1.ReadOnly = True
-        '
-        'Column2
-        '
-        Me.Column2.HeaderText = "Nome"
-        Me.Column2.Name = "Column2"
-        Me.Column2.ReadOnly = True
-        '
-        'Column4
-        '
-        Me.Column4.HeaderText = "CPF"
-        Me.Column4.Name = "Column4"
-        Me.Column4.ReadOnly = True
-        '
-        'Column3
-        '
-        Me.Column3.HeaderText = "Cargo"
-        Me.Column3.Name = "Column3"
-        Me.Column3.ReadOnly = True
-        '
-        'Column5
-        '
-        Me.Column5.HeaderText = "Remover"
-        Me.Column5.Image = CType(resources.GetObject("Column5.Image"), System.Drawing.Image)
-        Me.Column5.Name = "Column5"
-        Me.Column5.ReadOnly = True
-        Me.Column5.Resizable = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.Column5.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic
         '
         'btn_sair
         '
         Me.btn_sair.BackColor = System.Drawing.Color.Crimson
         Me.btn_sair.Font = New System.Drawing.Font("Segoe UI", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.btn_sair.ForeColor = System.Drawing.Color.White
-        Me.btn_sair.Location = New System.Drawing.Point(209, 503)
+        Me.btn_sair.Location = New System.Drawing.Point(430, 503)
         Me.btn_sair.Name = "btn_sair"
         Me.btn_sair.Size = New System.Drawing.Size(93, 54)
         Me.btn_sair.TabIndex = 10
@@ -133,16 +103,64 @@ Partial Class FuncForm
         Me.btn_add.ForeColor = System.Drawing.Color.White
         Me.btn_add.Location = New System.Drawing.Point(12, 503)
         Me.btn_add.Name = "btn_add"
-        Me.btn_add.Size = New System.Drawing.Size(191, 54)
+        Me.btn_add.Size = New System.Drawing.Size(254, 54)
         Me.btn_add.TabIndex = 11
         Me.btn_add.Text = "Adicionar"
         Me.btn_add.UseVisualStyleBackColor = False
+        '
+        'Column1
+        '
+        Me.Column1.HeaderText = "ID"
+        Me.Column1.Name = "Column1"
+        Me.Column1.ReadOnly = True
+        Me.Column1.Width = 43
+        '
+        'Column2
+        '
+        Me.Column2.HeaderText = "Nome"
+        Me.Column2.Name = "Column2"
+        Me.Column2.ReadOnly = True
+        Me.Column2.Width = 65
+        '
+        'Column4
+        '
+        Me.Column4.HeaderText = "CPF"
+        Me.Column4.Name = "Column4"
+        Me.Column4.ReadOnly = True
+        Me.Column4.Width = 53
+        '
+        'Column3
+        '
+        Me.Column3.HeaderText = "Cargo"
+        Me.Column3.Name = "Column3"
+        Me.Column3.ReadOnly = True
+        Me.Column3.Width = 64
+        '
+        'Column6
+        '
+        Me.Column6.HeaderText = "Editar"
+        Me.Column6.Image = CType(resources.GetObject("Column6.Image"), System.Drawing.Image)
+        Me.Column6.Name = "Column6"
+        Me.Column6.ReadOnly = True
+        Me.Column6.Resizable = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.Column6.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic
+        Me.Column6.Width = 62
+        '
+        'Column5
+        '
+        Me.Column5.HeaderText = "Remover"
+        Me.Column5.Image = CType(resources.GetObject("Column5.Image"), System.Drawing.Image)
+        Me.Column5.Name = "Column5"
+        Me.Column5.ReadOnly = True
+        Me.Column5.Resizable = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.Column5.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic
+        Me.Column5.Width = 79
         '
         'FuncForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(800, 560)
+        Me.ClientSize = New System.Drawing.Size(535, 560)
         Me.Controls.Add(Me.btn_add)
         Me.Controls.Add(Me.btn_sair)
         Me.Controls.Add(Me.data_func)
@@ -169,5 +187,6 @@ Partial Class FuncForm
     Friend WithEvents Column2 As DataGridViewTextBoxColumn
     Friend WithEvents Column4 As DataGridViewTextBoxColumn
     Friend WithEvents Column3 As DataGridViewTextBoxColumn
+    Friend WithEvents Column6 As DataGridViewImageColumn
     Friend WithEvents Column5 As DataGridViewImageColumn
 End Class
