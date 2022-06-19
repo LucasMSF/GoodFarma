@@ -47,7 +47,6 @@ Partial Class FormEstoque
         Me.Column6 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Column7 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Column2 = New System.Windows.Forms.DataGridViewImageColumn()
-        Me.Column1 = New System.Windows.Forms.DataGridViewImageColumn()
         Me.TabPage1 = New System.Windows.Forms.TabPage()
         Me.Label12 = New System.Windows.Forms.Label()
         Me.txt_id = New System.Windows.Forms.TextBox()
@@ -238,7 +237,7 @@ Partial Class FormEstoque
         Me.TabControl1.Location = New System.Drawing.Point(5, 12)
         Me.TabControl1.Name = "TabControl1"
         Me.TabControl1.SelectedIndex = 0
-        Me.TabControl1.Size = New System.Drawing.Size(685, 655)
+        Me.TabControl1.Size = New System.Drawing.Size(563, 655)
         Me.TabControl1.TabIndex = 16
         '
         'TabPage2
@@ -248,7 +247,7 @@ Partial Class FormEstoque
         Me.TabPage2.Location = New System.Drawing.Point(4, 24)
         Me.TabPage2.Name = "TabPage2"
         Me.TabPage2.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPage2.Size = New System.Drawing.Size(677, 627)
+        Me.TabPage2.Size = New System.Drawing.Size(555, 627)
         Me.TabPage2.TabIndex = 1
         Me.TabPage2.Text = "Tabela de Estoque"
         Me.TabPage2.UseVisualStyleBackColor = True
@@ -259,7 +258,7 @@ Partial Class FormEstoque
         Me.Panel3.Controls.Add(Me.Label5)
         Me.Panel3.Location = New System.Drawing.Point(7, 6)
         Me.Panel3.Name = "Panel3"
-        Me.Panel3.Size = New System.Drawing.Size(664, 42)
+        Me.Panel3.Size = New System.Drawing.Size(542, 42)
         Me.Panel3.TabIndex = 16
         '
         'Label5
@@ -268,7 +267,7 @@ Partial Class FormEstoque
         Me.Label5.Font = New System.Drawing.Font("Segoe UI", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         Me.Label5.ForeColor = System.Drawing.Color.White
         Me.Label5.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.Label5.Location = New System.Drawing.Point(282, 2)
+        Me.Label5.Location = New System.Drawing.Point(218, 2)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(119, 37)
         Me.Label5.TabIndex = 2
@@ -279,12 +278,12 @@ Partial Class FormEstoque
         Me.data_items.AllowUserToAddRows = False
         Me.data_items.AllowUserToDeleteRows = False
         Me.data_items.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.data_items.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Column9, Me.Column5, Me.Column6, Me.Column7, Me.Column2, Me.Column1})
+        Me.data_items.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Column9, Me.Column5, Me.Column6, Me.Column7, Me.Column2})
         Me.data_items.Location = New System.Drawing.Point(7, 67)
         Me.data_items.Name = "data_items"
         Me.data_items.ReadOnly = True
         Me.data_items.RowTemplate.Height = 25
-        Me.data_items.Size = New System.Drawing.Size(664, 554)
+        Me.data_items.Size = New System.Drawing.Size(542, 554)
         Me.data_items.TabIndex = 17
         '
         'Column9
@@ -320,15 +319,6 @@ Partial Class FormEstoque
         Me.Column2.Resizable = System.Windows.Forms.DataGridViewTriState.[True]
         Me.Column2.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic
         '
-        'Column1
-        '
-        Me.Column1.HeaderText = "Remover"
-        Me.Column1.Image = CType(resources.GetObject("Column1.Image"), System.Drawing.Image)
-        Me.Column1.Name = "Column1"
-        Me.Column1.ReadOnly = True
-        Me.Column1.Resizable = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.Column1.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic
-        '
         'TabPage1
         '
         Me.TabPage1.Controls.Add(Me.Label12)
@@ -346,7 +336,7 @@ Partial Class FormEstoque
         Me.TabPage1.Location = New System.Drawing.Point(4, 24)
         Me.TabPage1.Name = "TabPage1"
         Me.TabPage1.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPage1.Size = New System.Drawing.Size(677, 627)
+        Me.TabPage1.Size = New System.Drawing.Size(555, 627)
         Me.TabPage1.TabIndex = 0
         Me.TabPage1.Text = "Formulário de Estoque"
         Me.TabPage1.UseVisualStyleBackColor = True
@@ -357,7 +347,7 @@ Partial Class FormEstoque
         Me.Label12.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         Me.Label12.ForeColor = System.Drawing.SystemColors.MenuHighlight
         Me.Label12.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.Label12.Location = New System.Drawing.Point(580, 56)
+        Me.Label12.Location = New System.Drawing.Point(422, 56)
         Me.Label12.Name = "Label12"
         Me.Label12.Size = New System.Drawing.Size(31, 21)
         Me.Label12.TabIndex = 26
@@ -366,9 +356,9 @@ Partial Class FormEstoque
         'txt_id
         '
         Me.txt_id.Enabled = False
-        Me.txt_id.Location = New System.Drawing.Point(617, 54)
+        Me.txt_id.Location = New System.Drawing.Point(459, 54)
         Me.txt_id.Name = "txt_id"
-        Me.txt_id.Size = New System.Drawing.Size(50, 23)
+        Me.txt_id.Size = New System.Drawing.Size(59, 23)
         Me.txt_id.TabIndex = 25
         '
         'btn_cancelar
@@ -378,9 +368,9 @@ Partial Class FormEstoque
         Me.btn_cancelar.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.btn_cancelar.ForeColor = System.Drawing.Color.White
         Me.btn_cancelar.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.btn_cancelar.Location = New System.Drawing.Point(417, 206)
+        Me.btn_cancelar.Location = New System.Drawing.Point(432, 196)
         Me.btn_cancelar.Name = "btn_cancelar"
-        Me.btn_cancelar.Size = New System.Drawing.Size(106, 33)
+        Me.btn_cancelar.Size = New System.Drawing.Size(86, 43)
         Me.btn_cancelar.TabIndex = 24
         Me.btn_cancelar.Text = "Cancelar"
         Me.btn_cancelar.UseVisualStyleBackColor = False
@@ -392,7 +382,7 @@ Partial Class FormEstoque
         Me.btn_editar_produto.Font = New System.Drawing.Font("Segoe UI", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.btn_editar_produto.ForeColor = System.Drawing.Color.White
         Me.btn_editar_produto.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.btn_editar_produto.Location = New System.Drawing.Point(226, 196)
+        Me.btn_editar_produto.Location = New System.Drawing.Point(239, 196)
         Me.btn_editar_produto.Name = "btn_editar_produto"
         Me.btn_editar_produto.Size = New System.Drawing.Size(182, 43)
         Me.btn_editar_produto.TabIndex = 23
@@ -406,7 +396,7 @@ Partial Class FormEstoque
         Me.btn_cadastrar.ForeColor = System.Drawing.Color.White
         Me.btn_cadastrar.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
         Me.btn_cadastrar.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.btn_cadastrar.Location = New System.Drawing.Point(12, 196)
+        Me.btn_cadastrar.Location = New System.Drawing.Point(30, 196)
         Me.btn_cadastrar.Name = "btn_cadastrar"
         Me.btn_cadastrar.Size = New System.Drawing.Size(196, 43)
         Me.btn_cadastrar.TabIndex = 20
@@ -419,7 +409,7 @@ Partial Class FormEstoque
         Me.Label10.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         Me.Label10.ForeColor = System.Drawing.SystemColors.MenuHighlight
         Me.Label10.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.Label10.Location = New System.Drawing.Point(195, 124)
+        Me.Label10.Location = New System.Drawing.Point(213, 124)
         Me.Label10.Name = "Label10"
         Me.Label10.Size = New System.Drawing.Size(119, 21)
         Me.Label10.TabIndex = 22
@@ -431,7 +421,7 @@ Partial Class FormEstoque
         Me.Label8.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         Me.Label8.ForeColor = System.Drawing.SystemColors.MenuHighlight
         Me.Label8.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.Label8.Location = New System.Drawing.Point(11, 124)
+        Me.Label8.Location = New System.Drawing.Point(29, 124)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(104, 21)
         Me.Label8.TabIndex = 21
@@ -440,7 +430,7 @@ Partial Class FormEstoque
         'txt_valor
         '
         Me.txt_valor.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.txt_valor.Location = New System.Drawing.Point(195, 151)
+        Me.txt_valor.Location = New System.Drawing.Point(213, 151)
         Me.txt_valor.Name = "txt_valor"
         Me.txt_valor.ShortcutsEnabled = False
         Me.txt_valor.Size = New System.Drawing.Size(165, 23)
@@ -448,7 +438,7 @@ Partial Class FormEstoque
         '
         'txt_qtde
         '
-        Me.txt_qtde.Location = New System.Drawing.Point(12, 151)
+        Me.txt_qtde.Location = New System.Drawing.Point(30, 151)
         Me.txt_qtde.Name = "txt_qtde"
         Me.txt_qtde.Size = New System.Drawing.Size(165, 23)
         Me.txt_qtde.TabIndex = 1
@@ -459,7 +449,7 @@ Partial Class FormEstoque
         Me.Label6.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         Me.Label6.ForeColor = System.Drawing.SystemColors.MenuHighlight
         Me.Label6.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.Label6.Location = New System.Drawing.Point(12, 69)
+        Me.Label6.Location = New System.Drawing.Point(30, 69)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(151, 21)
         Me.Label6.TabIndex = 5
@@ -467,18 +457,18 @@ Partial Class FormEstoque
         '
         'txt_produto
         '
-        Me.txt_produto.Location = New System.Drawing.Point(12, 95)
+        Me.txt_produto.Location = New System.Drawing.Point(30, 95)
         Me.txt_produto.Name = "txt_produto"
-        Me.txt_produto.Size = New System.Drawing.Size(655, 23)
+        Me.txt_produto.Size = New System.Drawing.Size(488, 23)
         Me.txt_produto.TabIndex = 0
         '
         'Panel5
         '
         Me.Panel5.BackColor = System.Drawing.SystemColors.MenuHighlight
         Me.Panel5.Controls.Add(Me.Label9)
-        Me.Panel5.Location = New System.Drawing.Point(7, 6)
+        Me.Panel5.Location = New System.Drawing.Point(6, 6)
         Me.Panel5.Name = "Panel5"
-        Me.Panel5.Size = New System.Drawing.Size(664, 42)
+        Me.Panel5.Size = New System.Drawing.Size(543, 42)
         Me.Panel5.TabIndex = 17
         '
         'Label9
@@ -487,7 +477,7 @@ Partial Class FormEstoque
         Me.Label9.Font = New System.Drawing.Font("Segoe UI", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         Me.Label9.ForeColor = System.Drawing.Color.White
         Me.Label9.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.Label9.Location = New System.Drawing.Point(251, 0)
+        Me.Label9.Location = New System.Drawing.Point(200, 0)
         Me.Label9.Name = "Label9"
         Me.Label9.Size = New System.Drawing.Size(159, 37)
         Me.Label9.TabIndex = 17
@@ -510,7 +500,7 @@ Partial Class FormEstoque
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(693, 736)
+        Me.ClientSize = New System.Drawing.Size(577, 736)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.TabControl1)
         Me.Controls.Add(Me.Panel2)
@@ -556,12 +546,6 @@ Partial Class FormEstoque
     Friend WithEvents Panel3 As Panel
     Friend WithEvents Label5 As Label
     Friend WithEvents data_items As DataGridView
-    Friend WithEvents Column9 As DataGridViewTextBoxColumn
-    Friend WithEvents Column5 As DataGridViewTextBoxColumn
-    Friend WithEvents Column6 As DataGridViewTextBoxColumn
-    Friend WithEvents Column7 As DataGridViewTextBoxColumn
-    Friend WithEvents Column2 As DataGridViewImageColumn
-    Friend WithEvents Column1 As DataGridViewImageColumn
     Friend WithEvents Panel5 As Panel
     Friend WithEvents Label9 As Label
     Friend WithEvents Button1 As Button
@@ -576,4 +560,9 @@ Partial Class FormEstoque
     Friend WithEvents btn_cadastrar As Button
     Friend WithEvents Label12 As Label
     Friend WithEvents txt_id As TextBox
+    Friend WithEvents Column9 As DataGridViewTextBoxColumn
+    Friend WithEvents Column5 As DataGridViewTextBoxColumn
+    Friend WithEvents Column6 As DataGridViewTextBoxColumn
+    Friend WithEvents Column7 As DataGridViewTextBoxColumn
+    Friend WithEvents Column2 As DataGridViewImageColumn
 End Class

@@ -35,7 +35,7 @@ Partial Class FuncForm
         Me.Column4 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Column3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Column6 = New System.Windows.Forms.DataGridViewImageColumn()
-        Me.Column5 = New System.Windows.Forms.DataGridViewImageColumn()
+        Me.Column5 = New System.Windows.Forms.DataGridViewCheckBoxColumn()
         Me.ToolStrip1.SuspendLayout()
         CType(Me.data_func, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -148,13 +148,13 @@ Partial Class FuncForm
         '
         'Column5
         '
-        Me.Column5.HeaderText = "Remover"
-        Me.Column5.Image = CType(resources.GetObject("Column5.Image"), System.Drawing.Image)
+        Me.Column5.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Column5.HeaderText = "Ativo"
         Me.Column5.Name = "Column5"
         Me.Column5.ReadOnly = True
         Me.Column5.Resizable = System.Windows.Forms.DataGridViewTriState.[True]
         Me.Column5.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic
-        Me.Column5.Width = 79
+        Me.Column5.Width = 60
         '
         'FuncForm
         '
@@ -188,5 +188,5 @@ Partial Class FuncForm
     Friend WithEvents Column4 As DataGridViewTextBoxColumn
     Friend WithEvents Column3 As DataGridViewTextBoxColumn
     Friend WithEvents Column6 As DataGridViewImageColumn
-    Friend WithEvents Column5 As DataGridViewImageColumn
+    Friend WithEvents Column5 As DataGridViewCheckBoxColumn
 End Class

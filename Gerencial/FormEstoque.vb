@@ -92,14 +92,8 @@
                 txt_id.Text = .CurrentRow.Cells(0).Value
                 TabControl1.SelectedTab = TabPage1
                 estado_btn(True)
-            ElseIf .CurrentRow.Cells(5).Selected Then
-                Dim resp = MsgBox("Deseja descartar esse produto do estoque ?", vbQuestion + vbYesNo, "Atenção")
-                If resp = vbYes Then
-                    deleteProduct(.CurrentRow.Cells(0).Value)
-                    carregar_produtos(data_items)
-                Else
-                    Exit Sub
-                End If
+            Else
+                Exit Sub
             End If
         End With
     End Sub

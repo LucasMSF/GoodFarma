@@ -17,12 +17,18 @@
             rs = db.Execute(sql)
 
             If Not rs.EOF = True Then
-                sql = "SELECT * FROM tb_funcionarios WHERE id = " & rs.Fields(1).Value
+                sql = "SELECT * FROM tb_funcionarios WHERE id = " & rs.Fields(1).Value & " AND status = true"
                 rs = db.Execute(sql)
-                sessao = rs
-                login = True
+                If rs.EOF = True Then
+
+                    login = {False, "Usuário inativo!"}
+                Else
+                    sessao = rs
+                    login = {True}
+                End If
+
             Else
-                login = False
+                login = {False, "Usuário ou senha incorretos!"}
             End If
         Catch ex As Exception
             MsgBox("Erro na autenticação:", MsgBoxStyle.Critical + MsgBoxStyle.OkOnly, "Autenticação")
@@ -31,7 +37,8 @@
     End Function
 
     Private Sub autenticar()
-        If login(txt_usuario.Text, txt_senha.Text) = True Then
+        Dim resp = login(txt_usuario.Text, txt_senha.Text)
+        If resp(0) = True Then
             MsgBox("Bem-vindo(a) " & sessao(1).Value & " !", MsgBoxStyle.Information + MsgBoxStyle.OkOnly, "Autenticação")
             Select Case sessao.Fields(2).Value
                 Case 1
@@ -41,7 +48,7 @@
             End Select
             Close()
         Else
-            MsgBox("Usuário ou Senha incorretos!", MsgBoxStyle.Critical + MsgBoxStyle.OkOnly, "Autenticação")
+            MsgBox(resp(1), MsgBoxStyle.Critical + MsgBoxStyle.OkOnly, "Autenticação")
             limpar()
         End If
     End Sub

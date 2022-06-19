@@ -67,6 +67,7 @@
         txt_cpf.Text = Nothing
         txt_usuario.Text = Nothing
         txt_senha.Text = Nothing
+        txt_nome.Focus()
     End Sub
 
     Function verificar_registro(cpf As String)
