@@ -13,7 +13,7 @@
         End With
     End Sub
     Private Sub txt_pesquisa_TextChanged(sender As Object, e As EventArgs) Handles txt_pesquisa.TextChanged
-        carregar_dados("SELECT f.id, f.nome, f.cpf, c.nome FROM tb_funcionarios as f INNER JOIN tb_cargos as c ON f.cargo = c.id WHERE f.nome LIKE'" & txt_pesquisa.Text & "%' OR f.cpf LIKE '" & txt_pesquisa.Text & "%'")
+        carregar_dados("SELECT f.id, f.nome, f.cpf, c.nome, f.status FROM tb_funcionarios as f INNER JOIN tb_cargos as c ON f.cargo = c.id WHERE f.nome LIKE'" & txt_pesquisa.Text & "%' OR f.cpf LIKE '" & txt_pesquisa.Text & "%'")
     End Sub
 
     Private Sub btn_add_Click(sender As Object, e As EventArgs) Handles btn_add.Click
