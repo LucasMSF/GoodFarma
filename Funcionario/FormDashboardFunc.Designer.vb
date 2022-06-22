@@ -151,11 +151,11 @@ Partial Class FormDashboardFunc
         Me.btn_caixa.BackColor = System.Drawing.SystemColors.MenuHighlight
         Me.btn_caixa.Font = New System.Drawing.Font("Segoe UI", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.btn_caixa.ForeColor = System.Drawing.Color.White
-        Me.btn_caixa.Location = New System.Drawing.Point(12, 205)
+        Me.btn_caixa.Location = New System.Drawing.Point(12, 204)
         Me.btn_caixa.Name = "btn_caixa"
-        Me.btn_caixa.Size = New System.Drawing.Size(246, 54)
+        Me.btn_caixa.Size = New System.Drawing.Size(409, 54)
         Me.btn_caixa.TabIndex = 10
-        Me.btn_caixa.Text = "Controle de Caixa"
+        Me.btn_caixa.Text = "Caixa"
         Me.btn_caixa.UseVisualStyleBackColor = False
         '
         'btn_sair
